@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/day12/css/style.css">
+    <title>Liên hệ</title>
+</head>
+<style>
+    .header__navbar--item--link {
+        color: black ;
+        font-weight: 500;
+    }
+    .navbar-banner {
+        text-align: center;
+        background-color: black;
+        height: 80px;
+        
+    }
+    a , .bx{
+        text-decoration: none;
+        color: white ;
+    }
+    .box__img {
+        height: 400px;
+        width: 400px;
+        border-radius: 2%;
+        margin-top: 20px;
+    }
+    .box__item, .box__login{
+        height: 500px;
+        width: 600px;
+        margin-top: 25px;
+        margin-left: 50px;
+    }
+    .user {
+        margin-left: 15px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    .list {
+        margin-top: 15px;
+        height: 100px;
+        width: 500px;
+        border-radius: 5px;
+    }
+    .button {
+        margin: 15px 0px 0 200px;
+        color: white;
+        background-color: black;
+        border-radius: 8px;
+        height: 40px;
+        width: 80px;
+    }
+    .footer__link{
+        color: black;
+    }
+</style>
+<body>
+    <div class="app">
+        <header class="header py-1" style="background-color: white;">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar--list">
+                        <a href="">
+                            <img class="header-img" src="https://frt-cms-prod.s3-sgn09.fptcloud.com/logo_a3088aea9f.png" alt="">
+                        </a>
+                    </ul>
+                    <ul class="header__navbar--list" >
+                        <li class="header__navbar--item">
+                            <a href="/day12/ji/index-dv.html" class="header__navbar--item--link">Dịch vụ</a></li>
+                        <li class="header__navbar--item">
+                            <a href="/day12/ji/indexđ.html" class="header__navbar--item--link">Đăng nhập</a></li>
+                        <li class="header__navbar--item">
+                            <a href="/day12/ji/indexd.html" class="header__navbar--item--link">Đăng ký</a></li>
+                        <li class="header__navbar--item">
+                            <a href="/day12/ji/index-lh.html" class="header__navbar--item--link">liên hệ</a></li>
+                        <li class="header__navbar--item">
+                            <a href="" class="header__navbar--item--link">Giỏ hàng</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- <div class="row py-2">
+                    <div class="header__search">
+                        <input type="text" class="header__search--input" placeholder="Tìm kiếm sản phẩm">
+                    </div>
+                </div> -->
+                
+            </div>
+        </header>
+        <div class="container-fluid" style="background-color: black;">
+            <div class="gird">
+                <div class="row">
+                 <nav class="navbar-banner">
+                    <div class="banner__name">
+                        <h1 style="color: white;">Liên hệ</h1>
+                    </div>
+                    <div class="banner__link">
+                        <a href="">Trang chủ</a>
+                        <i class='bx bxs-chevron-right'></i>
+                        <a href="">Liên hệ</a>
+                    </div>
+                 </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="gird">
+                <div class="row">
+                    <div class="box__item ">
+                        <img class="box__img" src="/day12/image/tải xuống.jpg" alt="">
+                    </div>
+                    <div class="box__login">
+                        <div class="login">
+                            <h1>Bạn cần hỗ trợ?</h1>
+                            <h4>Hãy liên hệ với chúng tôi. Để yêu cầu của bạn sẽ được xử lý và phản hồi thời gian sớm nhất.</h4>
+                            <ul>Họ tên*
+                                <input type="text" placeholder="Tên đầy đủ" class="user" >
+                            </ul>
+                            <ul>Email*
+                                <input type="email" placeholder="Địa chỉ email" class="user" style="margin-left: 25px;">
+                            </ul>
+                            <ul>Tin nhắn*
+                                <input type="text" class="list" placeholder="Đừng ngại hỏi về dịch vụ bạn đang sử dụng">
+                            </ul>
+
+                            <button class="button">gửi</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2-4">
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="/day12/ji/index1.html" class="footer__link">Giới thiệu về công ty</a></li>  
+                            <li class="footer-item"><a href="" class="footer__link">Chính sách bảo mật</a></li>
+                            <li class="footer-item"><a href="" class="footer__link">Quy chế hoạt động</a></li>
+                            <li class="footer-item"><a href="" class="footer__link">Kiểm tra hóa đơn điện tử</a></li>
+                            <li class="footer-item"><a href="" class="footer__link">Tra cứu thông tin bảo hành</a></li>
+                            <li class="footer-item"><a href="" class="footer__link">Câu hỏi thường gặp mua hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="" class="footer__link">Tin tuyển dụng</a></li>  
+                            <li class="footer-item"><a href="" class="footer__link">Tin khuyễn mãi</a></li>
+                            <li class="footer-item"><a href="" class="footer__link">Hướng dẫn mua online</a></li>
+                            <li class="footer-item"><a href="" class="footer__link">Hướng dẫn mua tả góp</a></li>
+                            <li class="footer-item"><a href="" class="footer__link">Chính sách trả góp</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="" class="footer__link">Hệ thống cử hàng</a></li>  
+                            <li class="footer-item"><a href="" class="footer__link">chính sách đổi trả</a></li>
+                            <li class="footer-item"><a href="" class="footer__link">Hệ thống bảo hành</a></li>
+                            <li class="footer-item"><a href="" class="footer__link">Giới thiệu máy đổi trả</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <ul class="footer-list">
+                            <li>
+                                <p class="footer__heading">Hỗ trợ kỹ thuật</p>
+                                <a href="tel:1800 6601" class="footer__number" style="font-size: 20px">1800 6601
+                                </a>
+                            </li>
+                            <li>
+                                <p class="footer__heading">Góp ý khiếu nại(8h00-22h00)</p>
+                                <a href="tel:1800 6601" class="footer__number" style="font-size: 20px">1800 6616
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h6>Website cùng FPT Retail:</h6>
+                        <h6>Cửa hàng ủy quyền bởi Apple:</h6>
+                        <ul class="footer-list">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__row--list">
+                    <p>  © 2007 - 2023 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số FPT / Địa chỉ: 261 - 263 Khánh Hội, P5, Q4, TP. Hồ Chí Minh / GPĐKKD số 0311609355 do Sở KHĐT TP.HCM cấp ngày 08/03/2012. GP số 47/GP-TTĐT do sở TTTT TP HCM cấp ngày 02/07/2018. Điện thoại: <a href="" class="footer__link">(028) 7302 3456.</a> Email: <a href="" class="footer__link">fptshop@fpt.com.vn.</a> Chịu trách nhiệm nội dung: Nguyễn Trịnh Nhật Linh.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
