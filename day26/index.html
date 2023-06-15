@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="handleOnclick()">Click me</button>
+    
+    <script src="./js/script.js"></script>
+    <script>
+        var a = 0
+        var interval = setInterval(() => {
+            a+= 1;
+            console.log(a);
+            },1000);
+        clearInterval(interval);
+        // setInterval(() => {
+        //     a+= 1;
+        //     console.log(a);
+        // },1000);
+        
+        function handleOnclick() {
+            var a = 10;
+            console.log(a);
+            setTimeout( function() {
+                a = 15 ;
+                console.log(a);
+                alert ('you clicke me');
+            }, 2000)//plem1 là biểu thức , 2 là thời gian
+            setTimeout (alertClick, 1000)
+            setTimeout( function() {
+                alert (' me');
+            }, 5000)
+            a = 5;
+            console.log(a);
+
+            var promisel = new Promise(function(resolve, reject){
+                setTimeout ( () => {
+                    a = 20;
+                console.log(a);
+                },2000).then(function(){
+                    a = 12;
+                    console.log(a);
+                })
+                
+            })
+            
+            try {
+                console.log(b);
+            }catch (error){
+                console.log('hallo');
+            }
+        }
+        function alertClick(){
+            alert('click me')
+        }
+    </script>
+</body>
+</html>

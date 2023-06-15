@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .test {
+        display: none;
+    }
+</style>
+<body>
+    <div class="body-content test2">
+        <input type="password" name="email" id="password" onchange="handleOnChange()">
+    </div>
+    <button onclick=" handleOnclickButton()">bấm tui</button>
+    <button class="clear"> Clear màn hình</button>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        //$('.body-content').html('<h1>hallu</h1>');//document.getElementById().innerHTML
+        function handleOnChange() {
+            console.log($('#email').val());
+        }
+        function handleOnclickButton() {
+            //$('.body-content').addClass('test');
+            //$('.body-content').removeClass('test2');
+            $('.body-content').css('background-color', 'red');
+        }
+        $('.clear').on('click', function() {
+            $('.body-content').addClass('test');
+        });
+        $('#email').on('change', function() {
+            console.log($('#password').val());
+        })
+        $.document('ready', function() {
+            
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<style>
+    .map {
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+        /* border: 2px solid #143359; */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .square {
+        height: 198px;
+        width: 198px;
+        border: 1px solid #143359;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <div class="map">
+        <div class="square" id="index_" onclick="handleClickSquare(0, 0)"></div>
+        <div class="square" id="index_" onclick="handleClickSquare(0, 1)"></div>
+        <div class="square" id="index_" onclick="handleClickSquare(0, 2)"></div>
+        <div class="square" id="index_" onclick="handleClickSquare(1, 0)"></div>
+        <div class="square" id="index_" onclick="handleClickSquare(1, 1)"></div>
+        <div class="square" id="index_" onclick="handleClickSquare(1, 2)"></div>
+        <div class="square" id="index_" onclick="handleClickSquare(2, 0)"></div>
+        <div class="square" id="index_" onclick="handleClickSquare(2, 1)"></div>
+        <div class="square" id="index_" onclick="handleClickSquare(2, 2)"></div>
+    </div>
+    <script>
+        var arrayX = [];
+        var arrayO = [];
+        var turn = 0;
+        function handleClickSquare(m, n) {
+            // console.log('đánh giấu ');
+            turn += 1;
+            if ( turn % 2 === 1) {
+                arrayX.push([m, n]);
+                document.getElementById('index_'+ m + '' + n).innerHTML = 'X';
+             } else { arrayO.push([m, n]);
+                arrayO.push([m, n]);
+                document.getElementById('index_'+ m + '' + n).innerHTML = 'O`';
+            console.log(arrayX);
+            console.log(arrayO);
+            }
+            
+        }
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

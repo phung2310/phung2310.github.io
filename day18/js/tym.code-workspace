@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../tym"
+		},
+		{
+			"path": "../../../f12 fullstack/day14"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "day18"
+	}
+}

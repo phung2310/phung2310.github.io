@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phung-day25</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+    .js-style {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+    }
+    #login-form , #register  {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(62, 154, 31);
+        color: aqua;
+    }
+    button {
+        color: red;
+    }
+</style>
+<body>
+    <!-- <div class="js-style">
+        <p>chào bạn</p>
+    </div>
+    <div class="js-style">
+        <p>chào bạn</p>
+    </div> -->
+    <div id="login-form" >
+        <p>login-form</p>
+        <button onclick="submitForm()">bấm tui</button>
+    </div>
+    <div id="register">
+        <p>register</p>
+        <button onclick="handleOnclick()">bấm tui</button>
+    </div>
+    <script>
+        function submitForm() {
+            var element = document.getElementById('login-form')[0];
+            element.style.width = "300px";
+            element.style.height = "300px";
+            element.style.backgroundColor = "green";
+        }
+        function handleOnclick() {
+            var element = document.getElementById('register')[0];
+            element.style.width = "300px";
+            element.style.height = "300px";
+            element.style.backgroundColor = "green";
+        }
+    </script>
+    <script src="./js/script.js"></script>
+    <!-- <script language="javascript">
+
+        document.getElementById("btn1").onclick = function () {
+            document.getElementById("content").style.display = 'none';
+        }; -->
+    <!-- <button onclick="handleOnclick()">Bấm tôi</button>
+    <script src="./js/script.js"></script>
+    <script>
+        function handleOnclick() {
+            var element = document.querySelectorAll('.js-style');
+            element.forEach(query => {
+                query.style.backgroundColor = 'green';
+             });
+        element.style.coler = "yellow";
+        element.style.width = "300px";
+        element.style.height = "300px";
+        element.style.backgroundColor = "green";
+        }
+        
+    </script> -->
+
+</body>
+</html>

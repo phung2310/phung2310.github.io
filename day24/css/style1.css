@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(180deg, #FF8247, #00E5EE );
+    height: 100vh;
+    font-family: monospace;
+
+}
+
+.main-content {
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
+    background-color: #f4ecee44;
+    border-radius: 15px;
+    margin-top: 90px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 50px;
+}
+.login-form {
+    width: 350px;
+    margin: 0 auto;
+}
+#text-name, #text-email, #text-password, #text-number {
+    margin: 3px 0 10px 0;
+
+}
+.btn {
+    margin: 0 auto;
+    background-color: #FF8247;
+    color: white !important;
+}
